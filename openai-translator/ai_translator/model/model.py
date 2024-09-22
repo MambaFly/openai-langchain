@@ -1,12 +1,24 @@
 from book import ContentType
 
+
 class Model:
     def make_text_prompt(self, text: str, target_language: str) -> str:
-        return f"翻译为{target_language}：{text}"
+        # return f"将以下文本翻译成{target_language}：{text}"
+        if target_language == 'Ch':
+            target_language = '中文'
+            return f"将以下文本翻译成{target_language}：\n{text}"
+        elif target_language == 'En':
+            target_language = 'English'
+            return f"Translate the following text into {target_language}:\n{text}"
 
     def make_table_prompt(self, table: str, target_language: str) -> str:
         # return f"翻译为{target_language}，保持间距（空格，分隔符），以表格形式返回：\n{table}"
-        return f"翻译为{target_language}，以空格和换行符表示表格：\n{table}"
+        if target_language == 'Ch':
+            target_language = '中文'
+            return f"翻译为{target_language}，以空格和换行符表示表格：\n{table}"
+        elif target_language == 'En':
+            target_language = 'English'
+            return f"Translate to {target_language}, and represent tables with spaces and newline characters:\n{table}"
 
     def translate_prompt(self, content, target_language: str) -> str:
         if content.content_type == ContentType.TEXT:

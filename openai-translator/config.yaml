@@ -1,6 +1,6 @@
 OpenAIModel:
   model: "gpt-3.5-turbo"
-  api_key: "your_openai_api_key"
+  api_key: "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"
 
 GLMModel:
   model_url: "your_chatglm_model_url"
@@ -8,4 +8,5 @@ GLMModel:
 
 common:
   book: "tests/test.pdf"
-  file_format: "markdown"
+  target_language: "Ch"
+  file_format: "PDF"

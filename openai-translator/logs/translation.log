@@ -1,0 +1,1280 @@
+2024-09-02 12:49:07.067 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2024-09-02 12:49:07.073 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2024-09-02 12:49:07.117 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2024-09-02 12:49:10.435 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
+这个数据集包含了由OpenAI的AI语言模型ChatGPT提供的两个测试样本。
+这些样本包括一个Markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英文至中文翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这个句子包含了英文字母表中的每一个字母。句子是经常被用来测试字体、键盘和其他与文本有关的工具。除了英文，其他许多语言中也有句子。有些句子由于语言特点的独特性而更难构造。
+表格测试
+2024-09-02 12:49:10.443 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2024-09-02 12:49:12.808 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果    颜色     价格（美元）
+苹果    红色     1.20
+香蕉    黄色     0.50
+橙子    橙色     0.80
+草莓    红色     2.50
+蓝莓    蓝色     3.00
+猕猴桃  绿色     1.00
+芒果    橙色     1.50
+葡萄    紫色     2.00
+2024-09-02 12:49:12.809 | DEBUG    | book.content:set_translation:49 - 水果    颜色     价格（美元）
+苹果    红色     1.20
+香蕉    黄色     0.50
+橙子    橙色     0.80
+草莓    红色     2.50
+蓝莓    蓝色     3.00
+猕猴桃  绿色     1.00
+芒果    橙色     1.50
+葡萄    紫色     2.00
+2024-09-02 12:49:12.810 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2024-09-02 12:49:12.811 | DEBUG    | book.content:set_translation:55 -     水果  颜色 价格（美元）
+0   苹果  红色   1.20
+1   香蕉  黄色   0.50
+2   橙子  橙色   0.80
+3   草莓  红色   2.50
+4   蓝莓  蓝色   3.00
+5  猕猴桃  绿色   1.00
+6   芒果  橙色   1.50
+7   葡萄  紫色   2.00
+2024-09-02 12:49:12.816 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2024-09-02 12:49:12.817 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2024-09-02 12:49:12.818 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2024-09-02 13:00:34.083 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2024-09-02 13:00:34.090 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2024-09-02 13:00:34.137 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2024-09-02 13:00:37.851 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
+这个数据集包含了两个测试样本，由OpenAI的人工智能语言模型ChatGPT提供。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英译中翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这个全字母句至少包含了英语字母表中的每一个字母。全字母句常用于测试字体、键盘和其他文本相关工具。除了英语，许多其他语言也有全字母句。由于语言的独特特征，有些全字母句更难构造。
+表格测试
+2024-09-02 13:00:37.855 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2024-09-02 13:00:40.518 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果    颜色    价格（美元）
+苹果    红色    1.20
+香蕉    黄色    0.50
+橙子    橙色    0.80
+草莓    红色    2.50
+蓝莓    蓝色    3.00
+奇异果    绿色    1.00
+芒果    橙色    1.50
+葡萄    紫色    2.00
+2024-09-02 13:00:40.519 | DEBUG    | book.content:set_translation:49 - 水果    颜色    价格（美元）
+苹果    红色    1.20
+香蕉    黄色    0.50
+橙子    橙色    0.80
+草莓    红色    2.50
+蓝莓    蓝色    3.00
+奇异果    绿色    1.00
+芒果    橙色    1.50
+葡萄    紫色    2.00
+2024-09-02 13:00:40.521 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['奇异果', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
+2024-09-02 13:00:40.522 | DEBUG    | book.content:set_translation:55 -     水果  颜色 价格（美元）
+0   苹果  红色   1.20
+1   香蕉  黄色   0.50
+2   橙子  橙色   0.80
+3   草莓  红色   2.50
+4   蓝莓  蓝色   3.00
+5  奇异果  绿色   1.00
+6   芒果  橙色   1.50
+7   葡萄  紫色   2.00
+2024-09-02 13:00:40.527 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
+2024-09-02 13:00:40.527 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
+2024-09-02 13:00:40.528 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
+2024-09-02 14:34:14.352 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2024-09-02 14:34:14.358 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2024-09-02 14:34:14.402 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2024-09-02 14:34:20.476 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
+这个数据集包含由OpenAI的ChatGPT提供的两个测试样本，ChatGPT是一种AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的英译中翻译软件。
+文本测试
+敏捷的棕色狐狸跳过懒狗。这个全字母句至少包含了英文字母的每一个字母。全字母句经常用来测试字体、键盘和其他文本相关工具。除了英语，许多其他语言也有全字母句。由于语言的独特特性，有些全字母句更难构建。
+表格测试
+2024-09-02 14:34:20.485 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2024-09-02 14:34:22.369 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果       颜色    价格（美元）
+Apple      红色    1.20
+Banana     黄色    0.50
+Orange     橙色    0.80
+Strawberry 红色    2.50
+Blueberry  蓝色    3.00
+Kiwi       绿色    1.00
+Mango      橙色    1.50
+Grape      紫色    2.00
+2024-09-02 14:34:22.375 | DEBUG    | book.content:set_translation:49 - 水果       颜色    价格（美元）
+Apple      红色    1.20
+Banana     黄色    0.50
+Orange     橙色    0.80
+Strawberry 红色    2.50
+Blueberry  蓝色    3.00
+Kiwi       绿色    1.00
+Mango      橙色    1.50
+Grape      紫色    2.00
+2024-09-02 14:34:22.380 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['Apple', '红色', '1.20'], ['Banana', '黄色', '0.50'], ['Orange', '橙色', '0.80'], ['Strawberry', '红色', '2.50'], ['Blueberry', '蓝色', '3.00'], ['Kiwi', '绿色', '1.00'], ['Mango', '橙色', '1.50'], ['Grape', '紫色', '2.00']]
+2024-09-02 14:34:22.384 | DEBUG    | book.content:set_translation:55 -            水果  颜色 价格（美元）
+0       Apple  红色   1.20
+1      Banana  黄色   0.50
+2      Orange  橙色   0.80
+3  Strawberry  红色   2.50
+4   Blueberry  蓝色   3.00
+5        Kiwi  绿色   1.00
+6       Mango  橙色   1.50
+7       Grape  紫色   2.00
+2024-09-02 14:34:22.397 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: tests/test.pdf
+2024-09-02 14:34:22.398 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: tests/test_translated.pdf
+2024-09-02 14:34:22.604 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: tests/test_translated.pdf
+2024-09-02 14:48:05.391 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:48:05.401 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:48:05.402 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:48:20.625 | INFO     | translator.pdf_translator:translate_pdf:21 - 教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用 LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、地区差异、疾病关联、逐年变化进行分析。
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的风险评价和信贷额度、利率决策策略。
+
+实习经历
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+
+职业技能
+英语六级水平，具备良好的英文读写能力；扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运用Numpy、Pandas、Scikit-learn、Pillow等库；掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:48:20.634 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:48:21.547 | INFO     | translator.pdf_translator:translate_pdf:21 - [基本信息] 
+[] [荣誉奖项] 
+[] [个人评价]
+2024-09-02 14:48:21.547 | DEBUG    | book.content:set_translation:49 - [基本信息] 
+[] [荣誉奖项] 
+[] [个人评价]
+2024-09-02 14:48:21.548 | DEBUG    | book.content:set_translation:52 - [['[基本信息]'], ['[]', '[荣誉奖项]'], ['[]', '[个人评价]']]
+2024-09-02 14:48:21.549 | ERROR    | book.content:set_translation:59 - An error occurred during table translation: 1 columns passed, passed data had 2 columns
+2024-09-02 14:48:21.550 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/resume.pdf
+2024-09-02 14:48:21.551 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/resume_translated.md
+2024-09-02 14:48:21.552 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/resume_translated.md
+2024-09-02 14:52:49.293 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:52:49.302 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:52:49.303 | DEBUG    | translator.pdf_translator:translate_pdf:20 - None
+2024-09-02 14:53:22.085 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:53:22.093 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:53:22.094 | DEBUG    | translator.pdf_translator:translate_pdf:20 - None
+2024-09-02 14:55:22.374 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:55:22.382 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:55:22.383 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 将以下文本翻译成鑻辨枃：教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:55:44.661 | INFO     | translator.pdf_translator:translate_pdf:22 - 教育背景
+華中農業大學（211） 2022.07-至今
+生物信息學 碩士
+主修課程：數據挖掘，Python語言，自然語言處理，計算生物化學
+陜西科技大學 2018.09-2022.06
+計算機科學與技術 學士
+主修課程：數據結構與算法，離散數學，計組，操作系統，模式識別
+胡子龍
+項目經歷
+基於Stable Diffusion的大腦視覺重建模型 碩士期間課題
+求職意向：大模型算法工程師
+項目描述：基於NSD自然場景數據集，將大腦的fMRI數據作為輸入，基於GIT
+和DPT大模型分別構建大腦字幕模型和深度圖模型，並整合到基礎的Stable
+Diffusion框架中，實現原始嵌入融合字幕文本和深度圖的多模態視覺重建模型。
+工作內容：負責算法流程設計、實驗的設計與測試，以及對實驗結果的分析總結。
+24歲，湖北武漢
+基於ChatGLM3-6b在私有數據集上使用QLoRA微調 實戰項目
+項目描述：使用 ChatGPT自動設計生成訓練數據的Prompt，然後使用
+131-6418-0676
+LangChain+GPT-4o批量合成訓練數據，並應用了數據增強和提示工程，接著使
+1604845245@qq.com
+用QLoRA小樣本微調ChatGLM3，最終獲得具備領域知識的私有大模型。
+工作內容：合成數據、數據增強、提示工程、模型微調、測試和部署。
+基於文獻綜合與定量分析法的全球傳統藥物研究 跨院合作課題
+項目描述：通過自動爬蟲技術，獲取PubMed文獻數據，對傳統藥物的研究熱度、
+地區差異、疾病關聯、逐年變化進行分析。
+工作內容：數據預處理、測試並改進數據爬取程序、數據後處理、統計分析。
+基於判別分析法的中小微企業的信貸決策 2020數學建模競賽
+項目描述：通過規範化方法、判別分析、目標規劃等方法，給出了中小微企業的
+風險評價和信貸額度、利率決策策略。
+工作內容：作為隊長協調團隊成員工作、負責數據處理和建模實現
+實習經歷
+華中農業大學 信息學院伺服器管理員 2022.10-至今
+工作內容：排查並解決日常出現的問題，更換伺服器硬碟，維護學院伺服器的正
+常使用；監控伺服器使用情況，監測異常資源占用，清除挖礦病毒程式；重裝系
+統，配置cuda環境，為用戶安裝必要軟件，每年統計並征收費用。
+職業技能
+英語六級水平，具備良好的英文讀寫能力；
+扎實的數學功底和分析技能，能夠理解經典算法的底層數學原理；
+熟悉Python，掌握C/C++，Java，具備Python，Java編程項目經驗，熟練運
+用Numpy、Pandas、Scikit-learn、Pillow等庫；
+掌握機器學習、深度學習、大模型領域知識，有跨模態生成領域的算法研究；
+熟練使用Pytorch框架和Transforms工具庫，有大模型訓練和微調經驗；
+追踪前沿技術，能夠流暢閱讀理解最新學術成果，并複現核心算法；
+具備良好的團隊溝通與協作能力，擅長邏輯分析與歸納總結。
+2024-09-02 14:55:44.673 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 翻译为鑻辨枃，以空格和换行符表示表格：
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:55:46.076 | INFO     | translator.pdf_translator:translate_pdf:22 - []  [基本信息]
+[]  [荣誉奖项]
+[]  [个人评价]
+2024-09-02 14:55:46.079 | DEBUG    | book.content:set_translation:49 - []  [基本信息]
+[]  [荣誉奖项]
+[]  [个人评价]
+2024-09-02 14:55:46.082 | DEBUG    | book.content:set_translation:52 - [['[]', '[基本信息]'], ['[]', '[荣誉奖项]'], ['[]', '[个人评价]']]
+2024-09-02 14:55:46.085 | DEBUG    | book.content:set_translation:55 -    []  [基本信息]
+0  []  [荣誉奖项]
+1  []  [个人评价]
+2024-09-02 14:55:46.097 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/resume.pdf
+2024-09-02 14:55:46.099 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/resume_translated.md
+2024-09-02 14:55:46.101 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/resume_translated.md
+2024-09-02 14:58:01.104 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:58:01.113 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:58:01.115 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 将以下文本翻译成English：教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:58:13.240 | INFO     | translator.pdf_translator:translate_pdf:22 - Education Background
+Huazhong Agricultural University (211) 2022.07-present
+Master's degree in Bioinformatics
+Major courses: Data Mining, Python Language, Natural Language Processing, Computational Biochemistry
+Shaanxi University of Science and Technology 2018.09-2022.06
+Bachelor's degree in Computer Science and Technology
+Major courses: Data Structures and Algorithms, Discrete Mathematics, Computer Organization, Operating Systems, Pattern Recognition
+Hu Zilong
+Project Experience
+Brain Visual Reconstruction Model based on Stable Diffusion Master's thesis project
+Job Intention: Large Model Algorithm Engineer
+Project Description: Based on the NSD natural scene dataset, using the brain's fMRI data as input, building the brain subtitle model and depth map model based on GIT and DPT large models, respectively, and integrating them into the basic Stable Diffusion framework to achieve a multimodal visual reconstruction model that integrates original embeddings of subtitle text and depth maps.
+Job Responsibilities: Responsible for algorithm flow design, experimental design and testing, as well as analysis and summary of experimental results.
+24 years old, Wuhan, Hubei
+Fine-tuning QLoRA using ChatGLM3-6b on a private dataset Real-world project
+Project Description: Using ChatGPT to automatically design and generate training data prompts, then using LangChain+GPT-4o to batch synthesize training data, and using data augmentation and prompt engineering, followed by fine-tuning ChatGLM3 with QLoRA on a small sample to ultimately obtain a domain-knowledgeable private large model.
+Job Responsibilities: Synthesizing data, data augmentation, prompt engineering, model fine-tuning, testing, and deployment.
+Global Traditional Medicine Research based on Literature Review and Quantitative Analysis Cross-disciplinary project
+Project Description: Using automated web crawling technology to obtain PubMed literature data, analyzing the research trends, regional differences, disease associations, and year-on-year changes of traditional medicines.
+Job Responsibilities: Data preprocessing, testing and improving data crawling programs, data post-processing, statistical analysis.
+
+Multiple awards in academics and competitions
+- First-class scholarship (3 times)
+- Second Prize in National College Student Mathematical Modeling Competition
+- First Prize in Lanqiao Cup Provincial Competition, Outstanding Prize in National Competition
+- First Prize in Higher Mathematics Competition
+- Third Prize in Team Programming Ladder Competition
+
+Internship Experience
+Server Administrator, School of Information, Huazhong Agricultural University, 2022.10-present
+Job responsibilities: Troubleshoot and resolve daily issues, replace server hard drives, maintain the normal operation of the school's servers; monitor server usage, detect abnormal resource usage, remove mining virus programs; reinstall systems, configure CUDA environment, install necessary software for users, annual fee collection.
+
+Professional Skills
+- Proficient in English with a level of CET-6, good English reading and writing abilities
+- Strong mathematical foundation and analytical skills, able to understand the underlying mathematical principles of classical algorithms
+- Knowledgeable in Python, proficient in C/C++, Java, with project experience in Python and Java programming, proficient in libraries such as Numpy, Pandas, Scikit-learn, Pillow
+- Familiar with machine learning, deep learning, and large model domains, with algorithm research in cross-modal generation
+- Experienced in using Pytorch framework and Transform tools library, experienced in large model training and fine-tuning
+- Keeping abreast of cutting-edge technologies, able to fluently read and understand the latest academic achievements and reproduce core algorithms
+- Excellent team communication and collaboration skills, adept at logical analysis and summarization
+
+Personal Interests
+- Enjoys fitness, hiking, and other sports
+- Likes to try new things and learn new skills.
+2024-09-02 14:58:13.251 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 翻译为English，以空格和换行符表示表格：
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:58:14.130 | INFO     | translator.pdf_translator:translate_pdf:22 - [] [Basic Information] 
+[] [Honors and Awards] 
+[] [Personal Evaluation]
+2024-09-02 14:58:14.131 | DEBUG    | book.content:set_translation:49 - [] [Basic Information] 
+[] [Honors and Awards] 
+[] [Personal Evaluation]
+2024-09-02 14:58:14.132 | DEBUG    | book.content:set_translation:52 - [['[]', '[Basic', 'Information]'], ['[]', '[Honors', 'and', 'Awards]'], ['[]', '[Personal', 'Evaluation]']]
+2024-09-02 14:58:14.132 | ERROR    | book.content:set_translation:59 - An error occurred during table translation: 3 columns passed, passed data had 4 columns
+2024-09-02 14:58:14.132 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/resume.pdf
+2024-09-02 14:58:14.133 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/resume_translated.md
+2024-09-02 14:58:14.134 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/resume_translated.md
+2024-09-02 14:58:57.359 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:58:57.367 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:58:57.368 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 将以下文本翻译成鑻辨枃：教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 14:59:38.833 | INFO     | translator.pdf_translator:translate_pdf:22 - 教育背景
+華中農業大學（211） 2022.07-至今
+生物信息學 碩士
+主修課程：數據挖掘，Python語言，自然語言處理，計算生物化學
+陝西科技大學 2018.09-2022.06
+計算機科學與技術 學士
+主修課程：數據結構與算法，離散數學，計組，操作系統，模式識別
+胡子龍
+項目經歷
+基於Stable Diffusion的大腦視覺重建模型 碩士期間課題
+求職意向：大模型算法工程師
+項目描述：基於NSD自然場景數據集，將大腦的fMRI數據作爲輸入，基於GIT
+和DPT大模型分別構建大腦字幕模型和深度圖模型，並整合到基礎的Stable
+Diffusion框架中，實現原始嵌入融合字幕文本和深度圖的多模態視覺重建模型。
+工作內容：負責算法流程設計、實驗的設計與測試，以及對實驗結果的分析總結。
+24歲，湖北武漢
+基於ChatGLM3-6b在私有數據集上使用QLoRA微調 實戰項目
+項目描述：使用 ChatGPT自動設計生成訓練數據的Prompt，然後使用
+LangChain+GPT-4o批量合成訓練數據，並運用了數據增強和提示工程，接著使
+用QLoRA小樣本微調ChatGLM3，最終獲得具備領域知識的私有大模型。
+工作內容：合成數據、數據增強、提示工程、模型微調、測試和部署。
+基於文獻綜合與定量分析法的全球傳統藥物研究 跨院合作課題
+項目描述：通過自動爬蟲技術，獲取PubMed文獻數據，對傳統藥物的研究熱度、
+⦁ 學業一等獎學金（3次）
+地區差異、疾病關聯、逐年變化進行分析。
+⦁ 全國大學生數學建模競賽二等獎
+工作內容：數據預處理、測試並改進數據爬取程序、數據後處理、統計分析。
+⦁ 藍橋杯省賽一等獎，國賽優秀獎
+基於判別分析法的中小微企業的信貸決策 2020數學建模競賽
+⦁ 高等數學競賽校一等獎
+項目描述：通過規范化方法、判別分析、目標規劃等方法，給出了中小微企業的
+⦁ 團體程序設計天梯賽團隊三等獎
+風險評價和信貸額度、利率決策策略。
+⦁ “一帶一路”傳統藥物國際會議 工作內容：作為隊長協調團隊成員工作、負責數據處理和建模實現
+
+實習經歷
+華中農業大學 信息學院服務器管理員 2022.10-至今
+工作內容：排查並解決日常出現的問題，更換服務器硬盤，維護學院服務器的正
+常使用；監控服務器使用情況，監測異常資源佔用，清除挖礦病毒程序；重裝系
+統，配置cuda環境，為用戶安裝必要軟件，每年統計並徵收費用。
+⦁ 善於長期規劃，並以目標為導向 職業技能
+⦁ 重理性思考，且動手能力強 英語六級水平，具備良好的英文讀寫能力；
+扎實的數學功底和分析技能，能夠理解經典算法的底層數學原理；
+⦁ 認可價值後有強烈的內在驅動力
+熟悉Python，掌握C/C++，Java，具備Python，Java編程項目經驗，熟練運
+用Numpy、Pandas、Scikit-learn、Pillow等庫；
+掌握機器學習、深度學習、大模型領域知識，有跨模態生成領域的算法研究；
+熟練使用Pytorch框架和Transforms工具庫，有大模型訓練和微調經驗；
+追踪前沿技術，能夠流暢閱讀理解最新學術成果，并複現核心算法；
+具備良好的團隊溝通與協作能力，擅長邏輯分析與歸納總結。
+2024-09-02 14:59:38.840 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 翻译为鑻辨枃，以空格和换行符表示表格：
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 14:59:41.418 | INFO     | translator.pdf_translator:translate_pdf:22 - []      [基本信息]
+[]      [荣誉奖项]
+[]      [个人评价]
+2024-09-02 14:59:41.419 | DEBUG    | book.content:set_translation:49 - []      [基本信息]
+[]      [荣誉奖项]
+[]      [个人评价]
+2024-09-02 14:59:41.419 | DEBUG    | book.content:set_translation:52 - [['[]', '[基本信息]'], ['[]', '[荣誉奖项]'], ['[]', '[个人评价]']]
+2024-09-02 14:59:41.420 | DEBUG    | book.content:set_translation:55 -    []  [基本信息]
+0  []  [荣誉奖项]
+1  []  [个人评价]
+2024-09-02 14:59:41.424 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/resume.pdf
+2024-09-02 14:59:41.424 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/resume_translated.md
+2024-09-02 14:59:41.425 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/resume_translated.md
+2024-09-02 15:08:42.240 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 15:08:42.249 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 15:08:42.250 | DEBUG    | translator.pdf_translator:translate_pdf:20 - Translate the following text into English：教育背景
+华中农业大学（211） 2022.07-至今
+生物信息学 硕士
+主修课程：数据挖掘，Python语言，自然语言处理，计算生物化学
+陕西科技大学 2018.09-2022.06
+计算机科学与技术 本科
+主修课程：数据结构与算法，离散数学，计组，操作系统，模式识别
+胡子龙
+项目经历
+基于Stable Diffusion的大脑视觉重建模型 硕士期间课题
+求职意向：大模型算法工程师
+项目描述：基于NSD自然场景数据集，将大脑的fMRI数据作为输入，基于GIT
+和DPT大模型分别构建大脑字幕模型和深度图模型，并整合到基础的Stable
+Diffusion框架中，实现原始嵌入融合字幕文本和深度图的多模态视觉重建模型。
+工作内容：负责算法流程设计、实验的设计与测试，以及对实验结果的分析总结。
+24岁，湖北武汉
+基于ChatGLM3-6b在私有数据集上使用QLoRA微调 实战项目
+项目描述：使用 ChatGPT 自动设计生成训练数据的 Prompt，然后使用
+131-6418-0676
+LangChain+GPT-4o批量合成训练数据，并运用了数据增强和提示工程，接着使
+1604845245@qq.com
+用QLoRA小样本微调ChatGLM3，最终获得具备领域知识的私有大模型。
+工作内容：合成数据、数据增强、提示工程、模型微调、测试和部署。
+基于文献综合与定量分析法的全球传统药物研究 跨院合作课题
+项目描述：通过自动爬虫技术，获取PubMed文献数据，对传统药物的研究热度、
+ 学业一等奖学金（3次）
+地区差异、疾病关联、逐年变化进行分析。
+ 全国大学生数学建模竞赛二等奖
+工作内容：数据预处理、测试并改进数据爬取程序、数据后处理、统计分析。
+ 蓝桥杯省赛一等奖，国赛优秀奖
+基于判别分析法的中小微企业的信贷决策 2020数学建模竞赛
+ 高等数学竞赛校一等奖
+项目描述：通过规范化方法、判别分析、目标规划等方法，给出了中小微企业的
+ 团体程序设计天梯赛团队三等奖
+风险评价和信贷额度、利率决策策略。
+ “一带一路”传统药物国际会议 工作内容：作为队长协调团队成员工作、负责数据处理和建模实现
+“The brown reward for the
+实习经历
+bestpresentation”
+华中农业大学 信息学院服务器管理员 2022.10-至今
+工作内容：排查并解决日常出现的问题，更换服务器硬盘，维护学院服务器的正
+常使用；监控服务器使用情况，监测异常资源占用，清除挖矿病毒程序；重装系
+统，配置cuda环境，为用户安装必要软件，每年统计并征收费用。
+ 善于长期规划，并以目标为导向 职业技能
+ 重理性思考，且动手能力强 英语六级水平，具备良好的英文读写能力；
+扎实的数学功底和分析技能，能够理解经典算法的底层数学原理；
+ 认可价值后有强烈的内在驱动力
+熟悉Python，掌握C/C++，Java，具备Python，Java编程项目经验，熟练运
+ 爱好健身、爬山等运动 用Numpy、Pandas、Scikit-learn、Pillow等库；
+掌握机器学习、深度学习、大模型领域知识，有跨模态生成领域的算法研究；
+ 喜欢尝试新鲜事物，学习新技能
+熟练使用Pytorch框架和Transforms工具库，有大模型训练和微调经验；
+追踪前沿技术，能够流畅阅读理解最新学术成果，并复现核心算法；
+具备良好的团队沟通与协作能力，擅长逻辑分析与归纳总结。
+2024-09-02 15:09:01.978 | INFO     | translator.pdf_translator:translate_pdf:22 - Education Background
+Huazhong Agricultural University (211) 2022.07-present
+Master's in Bioinformatics
+Major Courses: Data Mining, Python Language, Natural Language Processing, Computational Biochemistry
+Shaanxi University of Science and Technology 2018.09-2022.06
+Bachelor's in Computer Science and Technology
+Major Courses: Data Structures and Algorithms, Discrete Mathematics, Computer Organization, Operating Systems, Pattern Recognition
+
+Zilong Hu
+Project Experience:
+Brain Visual Reconstruction Model based on Stable Diffusion, Master's Thesis
+Job Intention: Large Model Algorithm Engineer
+Project Description: Using fMRI data of the brain as input based on the NSD natural scene dataset, constructing brain subtitle models and deep map models based on GIT and DPT large models, integrating them into the basic Stable Diffusion framework to achieve a multimodal visual reconstruction model that combines raw embeddings of subtitle text and deep maps.
+Work Responsibilities: responsible for algorithm flow design, experimental design and testing, as well as analysis and summary of experimental results.
+24 years old, Wuhan, Hubei
+
+Using QLoRA Fine-tuning on a private dataset based on ChatGLM3-6b Real-world project
+Project Description: Using ChatGPT to automatically design and generate training data prompts, then batch synthesizing training data using LangChain+GPT-4o, applying data augmentation and prompting engineering, then fine-tuning ChatGLM3 with QLoRA on small samples to ultimately obtain a private large model with domain knowledge.
+Work Responsibilities: data synthesis, data augmentation, prompting engineering, model fine-tuning, testing, and deployment.
+
+Global Traditional Medicine Research based on Literature Integration and Quantitative Analysis, Interdisciplinary Collaborative Project
+Project Description: Using automatic web crawling technology to obtain PubMed literature data, analyze research trends, regional differences, disease associations, and annual changes in traditional medicine.
+
+Work Responsibilities: data preprocessing, testing and improving data crawling programs, data post-processing, statistical analysis.
+
+Credit Decision for Small and Medium-sized Enterprises based on Discriminant Analysis, 2020 Mathematical Modeling Competition
+Project Description: Using standardized methods, discriminant analysis, goal programming, etc., provided risk assessment for small and medium-sized enterprises and credit limit and interest rate decision strategies.
+
+Work Content: As team leader, coordinate team members' work, be responsible for data processing and modeling implementation.
+
+Internship Experience
+Server Administrator, School of Information, Huazhong Agricultural University 2022.10-present
+Work Responsibilities: Identify and resolve daily issues, replace server hard drives, maintain the normal operation of the school server; monitor server usage, detect abnormal resource usage, remove mining virus programs; reinstall the system, configure the CUDA environment, install necessary software for users, and collect fees annually.
+
+Career Skills
+- Logical thinking and strong problem-solving skills
+- Proficient in English, with a good grasp of English reading and writing
+- Strong mathematical foundation and analytical skills, able to understand the underlying mathematical principles of classical algorithms
+- Skilled in Python, proficient in C/C++, Java, with experience in Python, Java programming projects, proficient in libraries like Numpy, Pandas, Scikit-learn, Pillow
+- Familiar with machine learning, deep learning, and large model knowledge, with algorithm research in cross-modal generation
+- Proficient in using the Pytorch framework and Transforms library, with experience in training and fine-tuning large models
+- Keep track of cutting-edge technology, able to read and understand the latest academic achievements fluently, and reproduce core algorithms
+- Good team communication and collaboration skills, adept at logical analysis and induction.
+2024-09-02 15:09:01.986 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 翻译为En，以空格和换行符表示表格：
+[] [基本信息]
+[] [荣誉奖项]
+[] [个人评价]
+2024-09-02 15:09:02.887 | INFO     | translator.pdf_translator:translate_pdf:22 - [] [Basic Information]
+[] [Awards and Honors]
+[] [Personal Evaluation]
+2024-09-02 15:09:02.888 | DEBUG    | book.content:set_translation:49 - [] [Basic Information]
+[] [Awards and Honors]
+[] [Personal Evaluation]
+2024-09-02 15:09:02.889 | DEBUG    | book.content:set_translation:52 - [['[]', '[Basic', 'Information]'], ['[]', '[Awards', 'and', 'Honors]'], ['[]', '[Personal', 'Evaluation]']]
+2024-09-02 15:09:02.889 | ERROR    | book.content:set_translation:59 - An error occurred during table translation: 3 columns passed, passed data had 4 columns
+2024-09-02 15:09:02.890 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/resume.pdf
+2024-09-02 15:09:02.890 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/resume_translated.md
+2024-09-02 15:09:02.891 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/resume_translated.md
+2024-09-02 15:14:26.136 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 测试数据
+这个数据集包含由OpenAI的ChatGPT提供的两个测试样本，ChatGPT是一种AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式
+的英译中翻译软件。 文本测试 敏捷的棕色狐狸跳过懒狗。这个全字母句至少包含了英
+文字母的每一个字母。全字母句经常用来测试字体、键盘和其他文本相关工具。除了英
+语，许多其他语言也有全字母句。由于语言的独特特性，有些全字母句更难构建。
+表格测试
+2024-09-02 15:14:26.142 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Apple, 红色, 1.20] [Banana, 黄色, 0.50] [Orange, 橙色, 0.80] [Strawberry, 红色, 2.50] [Blueberry, 蓝色, 3.00] [Kiwi, 绿色, 1.00] [Mango, 橙色, 1.50] [Grape, 紫色, 2.00]
+2024-09-02 15:14:26.142 | DEBUG    | translator.pdf_translator:translate_pdf:20 - Translate the following text into English:
+测试数据
+这个数据集包含由OpenAI的ChatGPT提供的两个测试样本，ChatGPT是一种AI语言模型。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试支持文本和表格格式
+的英译中翻译软件。 文本测试 敏捷的棕色狐狸跳过懒狗。这个全字母句至少包含了英
+文字母的每一个字母。全字母句经常用来测试字体、键盘和其他文本相关工具。除了英
+语，许多其他语言也有全字母句。由于语言的独特特性，有些全字母句更难构建。
+表格测试
+2024-09-02 15:14:29.640 | INFO     | translator.pdf_translator:translate_pdf:22 - Test data
+This data set contains two test samples provided by OpenAI's ChatGPT, which is an AI language model.
+These samples include a Markdown table and an English text paragraph, which can be used to test English-to-Chinese translation software that supports text and table formats.
+Text test: The quick brown fox jumps over the lazy dog. This pangram contains at least one of every letter of the English alphabet. Pangrams are often used to test fonts, keyboards, and other text-related tools. In addition to English, many other languages also have pangrams. Due to the unique characteristics of languages, some pangrams are more difficult to construct.
+Table test
+2024-09-02 15:14:29.643 | DEBUG    | translator.pdf_translator:translate_pdf:20 - Translate to English, and represent tables with spaces and newline characters:
+[Apple, 红色, 1.20] [Banana, 黄色, 0.50] [Orange, 橙色, 0.80] [Strawberry, 红色, 2.50] [Blueberry, 蓝色, 3.00] [Kiwi, 绿色, 1.00] [Mango, 橙色, 1.50] [Grape, 紫色, 2.00]
+2024-09-02 15:14:31.473 | INFO     | translator.pdf_translator:translate_pdf:22 - Apple   Red     1.20
+Banana  Yellow  0.50
+Orange  Orange  0.80
+Strawberry  Red     2.50
+Blueberry   Blue    3.00
+Kiwi    Green   1.00
+Mango   Orange  1.50
+Grape   Purple  2.00
+2024-09-02 15:14:31.478 | DEBUG    | book.content:set_translation:49 - Apple   Red     1.20
+Banana  Yellow  0.50
+Orange  Orange  0.80
+Strawberry  Red     2.50
+Blueberry   Blue    3.00
+Kiwi    Green   1.00
+Mango   Orange  1.50
+Grape   Purple  2.00
+2024-09-02 15:14:31.483 | DEBUG    | book.content:set_translation:52 - [['Apple', 'Red', '1.20'], ['Banana', 'Yellow', '0.50'], ['Orange', 'Orange', '0.80'], ['Strawberry', 'Red', '2.50'], ['Blueberry', 'Blue', '3.00'], ['Kiwi', 'Green', '1.00'], ['Mango', 'Orange', '1.50'], ['Grape', 'Purple', '2.00']]
+2024-09-02 15:14:31.485 | DEBUG    | book.content:set_translation:55 -         Apple     Red  1.20
+0      Banana  Yellow  0.50
+1      Orange  Orange  0.80
+2  Strawberry     Red  2.50
+3   Blueberry    Blue  3.00
+4        Kiwi   Green  1.00
+5       Mango  Orange  1.50
+6       Grape  Purple  2.00
+2024-09-02 15:14:31.491 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test_translated.pdf
+2024-09-02 15:14:31.491 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated_translated.md
+2024-09-02 15:14:31.493 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated_translated.md
+2024-09-02 15:15:43.348 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2024-09-02 15:15:43.354 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2024-09-02 15:15:43.396 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 将以下文本翻译成中文：
+Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2024-09-02 15:15:47.867 | INFO     | translator.pdf_translator:translate_pdf:22 - 测试数据
+这个数据集包含了两个由OpenAI的AI语言模型ChatGPT提供的测试样本。
+这些样本包括一个markdown表格和一段英文文本，可用于测试支持文本和表格格式的英译中翻译软件。
+文本测试
+快速的棕色狐狸跳过懒狗。这个全字母句包含了英语字母表中的每个字母至少一次。全字母句通常用来测试字体、键盘和其他与文本相关的工具。除了英语，许多其他语言也有全字母句。由于语言的独特特点，一些全字母句更难构建。
+表格测试
+2024-09-02 15:15:47.876 | DEBUG    | translator.pdf_translator:translate_pdf:20 - 翻译为中文，以空格和换行符表示表格：
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2024-09-02 15:15:49.821 | INFO     | translator.pdf_translator:translate_pdf:22 - 水果    颜色    价格（美元）
+Apple    红色    1.20
+Banana    黄色    0.50
+Orange    橙色    0.80
+Strawberry    红色    2.50
+Blueberry    蓝色    3.00
+Kiwi    绿色    1.00
+Mango    橙色    1.50
+Grape    紫色    2.00
+2024-09-02 15:15:49.823 | DEBUG    | book.content:set_translation:49 - 水果    颜色    价格（美元）
+Apple    红色    1.20
+Banana    黄色    0.50
+Orange    橙色    0.80
+Strawberry    红色    2.50
+Blueberry    蓝色    3.00
+Kiwi    绿色    1.00
+Mango    橙色    1.50
+Grape    紫色    2.00
+2024-09-02 15:15:49.824 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['Apple', '红色', '1.20'], ['Banana', '黄色', '0.50'], ['Orange', '橙色', '0.80'], ['Strawberry', '红色', '2.50'], ['Blueberry', '蓝色', '3.00'], ['Kiwi', '绿色', '1.00'], ['Mango', '橙色', '1.50'], ['Grape', '紫色', '2.00']]
+2024-09-02 15:15:49.825 | DEBUG    | book.content:set_translation:55 -            水果  颜色 价格（美元）
+0       Apple  红色   1.20
+1      Banana  黄色   0.50
+2      Orange  橙色   0.80
+3  Strawberry  红色   2.50
+4   Blueberry  蓝色   3.00
+5        Kiwi  绿色   1.00
+6       Mango  橙色   1.50
+7       Grape  紫色   2.00
+2024-09-02 15:15:49.831 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: tests/test.pdf
+2024-09-02 15:15:49.831 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: tests/test_translated.pdf
+2024-09-02 15:15:49.969 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: tests/test_translated.pdf
